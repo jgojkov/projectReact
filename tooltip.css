@@ -1,0 +1,37 @@
+/* Tooltip */
+
+.tooltip-trigger {
+  cursor: pointer;
+  display: inline-block;
+  border: 1px solid #007bff;
+  color: #007bff;
+  width: 16px;
+  height: 16px;
+  border-radius: 10px;
+  position: relative;
+  text-align: center;
+  opacity: 1;
+  vertical-align: middle;
+  margin: 0 4px;
+  margin-top: -4px;
+}
+
+.tooltip-trigger:hover {
+  opacity: 0.7;
+}
+
+.tooltip-trigger:after {
+  content: "?";
+  display: inline-block;
+  position: absolute;
+  left: 4px;
+  top: 0;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.tooltip-inner {
+  max-width: 320px;
+  text-align: left;
+  padding: 10px 16px;
+}

@@ -1,0 +1,52 @@
+/* Spinner */
+.jum-spinner,
+.jum-spinner:before,
+.jum-spinner:after {
+  border-radius: 50%;
+  width: 5px;
+  height: 5px;
+  animation-fill-mode: both;
+  animation: load7 1.8s infinite ease-in-out;
+}
+.jum-spinner {
+  color: var(--primary);
+  margin: 10px auto -4px auto;
+  position: relative;
+  text-indent: -9999em;
+  transform: translateZ(0);
+  animation-delay: -0.2s;
+  opacity: 0.4;
+}
+.jum-spinner:before,
+.jum-spinner:after {
+  content: "";
+  position: absolute;
+  top: 0;
+}
+.jum-spinner:before {
+  left: -1.5rem;
+  animation-delay: -0.32s;
+}
+.jum-spinner:after {
+  left: 1.5rem;
+}
+@-webkit-keyframes load7 {
+  0%,
+  80%,
+  100% {
+    box-shadow: 0 -0.5rem 0 -0.3rem;
+  }
+  40% {
+    box-shadow: 0 -0.5rem 0 0;
+  }
+}
+@keyframes load7 {
+  0%,
+  80%,
+  100% {
+    box-shadow: 0 -0.5rem 0 -0.3rem;
+  }
+  40% {
+    box-shadow: 0 -0.5rem 0 0;
+  }
+}

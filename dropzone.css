@@ -1,0 +1,70 @@
+/* Default styling */
+.dropzone-wrapper {
+    position: relative;
+    background: white;
+    box-shadow: 0 0 12px rgba(0,0,0,.1);
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.dropzone {
+    padding: 28px 32px;
+    border: 1px dashed rgba(0,0,0,.2);
+    transition: all .2s;
+    border-radius: 3px;
+}
+
+.dropzone:focus, .dropzone:active {
+    outline: 0;
+    border-color: rgba(0,123,255,1);
+    box-shadow: 0 0 12px rgba(0,123,255,.2);
+}
+
+.dropzone p {
+    font-size: 14px;
+    line-height: 20px;
+    color: var(--secondary);
+    text-align: center;
+}
+
+.dropzone-wrapper .dropzone-files:not(:empty) + .dropzone {
+    margin: 0 28px 32px 28px;
+}
+
+.dropzone-wrapper .dropzone-files:not(:empty) + .dropzone.dropzone-single {
+    display: none;
+}
+
+.dropzone-files {
+    padding: 28px 32px;
+    border-radius: 3px;
+    background: white;
+}
+
+.dropzone-files:empty {
+    display: none;
+}
+
+.dropzone-file {
+    border-bottom: 1px solid rgba(0,0,0,.1);
+    margin-bottom: 8px;
+    padding-bottom: 8px;
+}
+
+.dropzone-file:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.dropzone-filename {
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 600;
+}
+
+/* Textarea height IE11 */
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    .dropzone-file .rc-progress-line {
+        height: 3px;
+    }
+}

@@ -1,0 +1,16 @@
+/* Paddings */
+.padding-all-small {
+    padding: 14px 20px;
+}
+
+.padding-all-medium {
+    padding: 20px 28px;
+}
+
+.padding-all-large {
+    padding: 32px 40px;
+}
+
+.padding-all-xlarge {
+    padding: 40px 60px;
+}

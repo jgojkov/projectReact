@@ -1,0 +1,86 @@
+/* Login modal */
+
+.jum-login-modal {
+    background: white;
+    max-width: 480px;
+    border-radius: 6px;
+}
+
+.jum-login-modal-title {
+    font-size: 25px;
+    line-height: 36px;
+    padding: 24px 32px 20px 32px;
+}
+
+.jum-login-modal-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.jum-login-modal-list li {
+    margin: 0;
+    border-top: 1px solid rgba(0,0,0,.1);
+}
+
+.jum-login-modal-list li button {
+    display: block;
+    text-transform: lowercase;
+    padding: 24px 32px;
+    transition: all .2s ease-in;
+    position: relative;
+    padding-right: 80px;
+    font-size: 14px;
+    line-height: 20px;
+    width: 100%;
+    text-align: left;
+    border: 0;
+    cursor: pointer;
+    color: #007bff;
+    background: transparent;
+    border-radius: 0;
+}
+
+.jum-login-modal-list li button:last-child {
+    border-radius: 0 0 6px 6px;
+}
+
+.jum-login-modal-list li button:hover {
+    background: #F8F9FA;
+    text-decoration: none;
+}
+
+.jum-login-modal-list li button:before,
+.jum-login-modal-list li button:after {
+    content: "";
+    position: absolute;
+    opacity: .5;
+    display: inline-block;
+    transition: all .2s ease-in;
+}
+
+.jum-login-modal-list li button:hover:before,
+.jum-login-modal-list li button:hover:after {
+    opacity: 1;
+}
+
+.jum-login-modal-list li button:before {
+    right: 28px;
+    top: 50%;
+    width: 28px;
+    height: 0;
+    border-bottom: 1px solid #007bff;
+}
+
+.jum-login-modal-list li button:after {
+    right: 28px;
+    top: calc(50% - 3px);
+    width: 7px;
+    height: 7px;
+    border-right: 1px solid #007bff;
+    border-bottom: 1px solid #007bff;
+    transform: rotate(-45deg);
+}
+
+.jum-login-modal-list li button:first-letter {
+    text-transform: uppercase;
+}

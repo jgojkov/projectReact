@@ -1,0 +1,15 @@
+.split-row {
+    display: flex;
+}
+
+.split-row-content {
+    flex: 1 1 0;
+}
+
+.split-row-actions {
+    flex: 0 0 auto;
+}
+
+.split-row-actions--dropzone {
+    flex-basis: 72px;
+}

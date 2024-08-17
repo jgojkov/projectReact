@@ -1,0 +1,128 @@
+/* CSS symbols */
+.jum-symbol {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    position: relative;
+    vertical-align: middle;
+    margin-top: -2px;
+}
+
+.jum-symbol-check {
+    background: #007bff;
+}
+
+.jum-symbol-check:after {
+    content: "";
+    position: absolute;
+    top: 8px;
+    left: 7px;
+    height: 5px;
+    width: 9px;
+    border-bottom: 2px solid white;
+    border-left: 2px solid white;
+    transform: rotate(-45deg);
+}
+
+.jum-symbol-x {
+    background: var(--danger);
+    text-align: left;
+}
+
+/* Textarea height IE11 */
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    .jum-symbol-x {
+        background: #dc3545;
+    }
+}
+
+.jum-symbol-x:before {
+    content: "";
+    position: absolute;
+    top: 9px;
+    left: 10px;
+    height: 11px;
+    width: 9px;
+    border-left: 2px solid white;
+    transform: rotate(45deg);
+}
+
+.jum-symbol-x:after {
+    content: "";
+    position: absolute;
+    top: 9px;
+    left: 5px;
+    height: 11px;
+    width: 9px;
+    border-right: 2px solid white;
+    transform: rotate(-45deg);
+}
+
+.jum-symbol-simple-check {
+    display: inline-block;
+    height: 8px;
+    width: 19px;
+    border-bottom: 2px solid var(--success);
+    border-left: 2px solid var(--success);
+    transform: rotate(-45deg);
+    vertical-align: middle;
+}
+
+/* Textarea height IE11 */
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    .jum-symbol-simple-check {
+        border-bottom: 2px solid #28a745;
+        border-left: 2px solid #28a745;
+    }
+}
+
+.jum-symbol-simple-x {
+    display: inline-block;
+    width: 19px;
+    position: relative;
+    border-bottom: 2px solid black;
+    transform: rotate(-45deg);
+    opacity: .4;
+    vertical-align: middle;
+    text-align: left;
+}
+
+.jum-symbol-simple-x:after {
+    content: "";
+    position: absolute;
+    display: inline-block;
+    width: 19px;
+    border-bottom: 2px solid black;
+    transform: rotate(90deg);
+}
+
+.jum-symbol-simple-x--sml {
+    display: inline-block;
+    width: 12px;
+    position: relative;
+    border-bottom: 2px solid black;
+    transform: rotate(-45deg);
+    opacity: .5;
+    vertical-align: middle;
+    text-align: left;
+}
+
+.jum-symbol-simple-x--sml:after {
+    content: "";
+    position: absolute;
+    display: inline-block;
+    width: 12px;
+    border-bottom: 2px solid black;
+    transform: rotate(90deg);
+}
+
+.jum-symbol-arrow {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border-left: 1px solid rgba(0,0,0,.4);
+    border-bottom: 1px solid rgba(0,0,0,.4);
+    transform: rotate(-45deg);
+    transition: all .2s;
+}

@@ -1,0 +1,133 @@
+/* Button global */
+.btn {
+  border-radius: 3px;
+  font-size: 14px;
+  line-height: 36px;
+  height: 36px;
+  padding: 0 20px;
+  background-color: transparent;
+}
+
+/* Button sizes */
+.btn-xsmall {
+  font-size: 11px;
+  line-height: 24px;
+  padding: 0 12px;
+  height: 24px;
+}
+
+.btn-small {
+  font-size: 12px;
+  line-height: 28px;
+  padding: 0 16px;
+  height: 28px;
+}
+
+.btn-medium {
+  font-size: 14px;
+  line-height: 36px;
+  padding: 0 20px;
+  height: 36px;
+}
+
+.btn-large {
+  font-size: 16px;
+  line-height: 44px;
+  padding: 0 28px;
+  height: 44px;
+}
+
+.btn-xlarge {
+  font-size: 20px;
+  line-height: 52px;
+  padding: 0 32px;
+  height: 52px;
+}
+
+/* Button variants */
+.btn-primary {
+  background-color: #007bff;
+}
+
+.btn-primary.disabled,
+.btn-primary:disabled {
+  opacity: 0.3;
+}
+
+.btn-secondary {
+  color: rgba(0, 0, 0, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  background-color: transparent;
+}
+
+.btn-secondary:hover {
+  color: #007bff;
+  border-color: #007bff;
+  background-color: transparent;
+}
+
+.btn-secondary:not(:disabled):not(.disabled).active,
+.btn-secondary:not(:disabled):not(.disabled):active,
+.show > .btn-secondary.dropdown-toggle {
+  color: #0069d9;
+  border-color: #0069d9;
+  background-color: transparent;
+}
+
+.btn-secondary.focus,
+.btn-secondary:focus {
+  box-shadow: 0 0 0 0.2rem rgba(130, 138, 145, 0.18);
+}
+
+.btn-secondary:not(:disabled):not(.disabled).active:focus,
+.btn-secondary:not(:disabled):not(.disabled):active:focus,
+.show > .btn-secondary.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.2rem rgba(130, 138, 145, 0.18);
+}
+
+.btn-secondary.disabled,
+.btn-secondary:disabled,
+.btn-secondary:hover:disabled {
+  opacity: 0.3;
+  color: rgba(0, 0, 0, 0.8);
+  background-color: transparent;
+  border-color: rgba(0, 0, 0, 0.5);
+}
+
+.btn-danger {
+  background-color: #db3036;
+}
+
+.btn-danger.disabled,
+.btn-danger:disabled {
+  opacity: 0.3;
+}
+
+.btn-link.disabled,
+.btn-link:disabled {
+  opacity: 0.3;
+}
+
+/* Custom button styles */
+.btn-jum-menu {
+  color: #212529;
+  transition: all 0.2s;
+}
+
+.btn-jum-menu:hover {
+  color: #535456;
+  opacity: 0.8;
+  background-color: transparent;
+}
+
+.btn-jum-menu:not(:disabled):not(.disabled).active,
+.btn-jum-menu:not(:disabled):not(.disabled):active,
+.show > .btn-jum-menu.dropdown-toggle {
+  background-color: transparent;
+}
+
+.btn-jum-menu.focus,
+.btn-jum-menu:focus,
+.btn-jum-menu[aria-expanded="true"] {
+  box-shadow: none !important;
+}

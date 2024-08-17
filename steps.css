@@ -1,0 +1,157 @@
+/* Steps wrapper */
+.steps-wrapper {
+  position: relative;
+}
+
+/* Steps progress styles */
+.steps-progress-wrapper {
+  position: absolute;
+  top: 12px;
+  height: 2px;
+  background: rgba(0, 0, 0, 0.1);
+
+  top: 11px;
+  width: calc(100% - 24px);
+  left: 12px;
+}
+
+@media only screen and (min-width: 64em) {
+  .steps-progress-wrapper {
+    left: 36px;
+    width: calc(100% - 72px);
+  }
+}
+
+.steps-progress {
+  display: inline-block;
+  position: absolute;
+  height: 2px;
+  background: var(--primary);
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .steps-progress {
+    background: #007bff;
+  }
+}
+
+/* All steps */
+.steps {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  font-size: 11px;
+  line-height: 12px;
+  list-style: none;
+  position: relative;
+}
+
+@media only screen and (min-width: 48em) {
+  .steps {
+    font-size: 12px;
+    line-height: 16px;
+  }
+}
+
+/* Single step */
+.step {
+  position: relative;
+  color: rgba(0, 0, 0, 0.3);
+  width: 24px;
+  text-align: center;
+  z-index: 2;
+}
+
+@media only screen and (min-width: 64em) {
+  .step {
+    width: 80px;
+  }
+}
+
+.step-indicator {
+  position: relative;
+  display: inline-block;
+}
+
+.step-indicator:before {
+  content: "";
+  position: relative;
+  display: block;
+  height: 24px;
+  width: 24px;
+  border: 1px solid #d1d1d1;
+  border-radius: 50%;
+  background: white;
+}
+
+.step-label {
+  display: inline-block;
+  position: absolute;
+  top: 32px;
+  left: 0;
+  width: 60px;
+  text-align: center;
+  transform: translateX(-20px);
+}
+
+@media only screen and (min-width: 64em) {
+  .step-label {
+    width: 120px;
+    transform: translateX(-48px);
+  }
+}
+
+/* Step state current */
+.step-current {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.step-current .step-indicator:before {
+  background: var(--primary);
+  border-color: var(--primary);
+}
+
+/* IE11 */
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .step-current .step-indicator:before {
+    background: #007bff;
+    border-color: #007bff;
+  }
+}
+
+/* Step state completed */
+.step-completed .step-indicator:before {
+  background: var(--primary);
+  border-color: var(--primary);
+}
+
+/* IE11 */
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .step-completed .step-indicator:before {
+    background: #007bff;
+    border-color: #007bff;
+  }
+}
+
+.step-completed .step-indicator:after {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: 7px;
+  width: 9px;
+  height: 5px;
+  border-left: 2px solid white;
+  border-bottom: 2px solid white;
+  transform: rotate(-45deg);
+}
+
+/* Step state skipped */
+.step-skipped .step-indicator:before {
+  background: #78b6f9;
+  border-color: #78b6f9;
+}
+
+.step-skipped .step-indicator:after {
+  display: none;
+}

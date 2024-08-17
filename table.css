@@ -1,0 +1,71 @@
+/* Table global */
+.table {
+  border-radius: 3px;
+}
+
+.table thead th {
+  border-top: 0;
+  font-size: 12px;
+  line-height: 16px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  opacity: 0.5;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 8px 20px;
+}
+
+.table td {
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.table tbody td {
+  padding: 12px 20px;
+  font-size: 13px;
+  line-height: 20px;
+  cursor: pointer;
+}
+
+/* Table hover */
+.table-hover tbody tr:hover {
+  transition: all 0.1s;
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+/* Table simple */
+.table-simple thead th {
+}
+
+/* Table striped */
+.table-striped {
+  box-shadow: 0 0 18px rgba(0, 0, 0, 0.075);
+  background-color: white;
+}
+
+.table-striped tbody tr:nth-of-type(even) {
+  background-color: rgba(0, 0, 60, 0.04);
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+  background-color: white;
+}
+
+.table-striped thead {
+  background-color: white;
+}
+
+.table-striped td {
+  border-top: 0;
+}
+
+/* Table condensed */
+.table-sm tbody tr td,
+.table-sm tbody tr th,
+.table-sm tfoot tr td,
+.table-sm tfoot tr th {
+  padding: 8px 20px;
+}
+
+.table-sm thead tr td,
+.table-sm thead tr th {
+  padding: 6px 20px;
+}

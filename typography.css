@@ -1,0 +1,188 @@
+/* Alignment */
+.type-left {
+    text-align: left;
+}
+
+.type-center {
+    text-align: center;
+}
+
+.type-right {
+    text-align: right;
+}
+
+/* Case */
+.type-upper {
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+/* Sizes */
+.type-large {
+    font-size: 20px;
+    line-height: 28px;
+}
+
+@media only screen and (min-width: 48em) {
+    .type-large {
+        font-size: 25px;
+        line-height: 36px;
+    }
+}
+
+.type-medium {
+    font-size: 16px;
+    line-height: 24px;
+}
+
+@media only screen and (min-width: 48em) {
+    .type-medium {
+        font-size: 20px;
+        line-height: 28px;
+    }
+}
+
+.type-base {
+    font-size: 14px;
+    line-height: 20px;
+}
+
+@media only screen and (min-width: 48em) {
+    .type-base {
+        font-size: 16px;
+        line-height: 24px;
+    }
+}
+
+.type-small {
+    font-size: 12px;
+    line-height: 16px;
+}
+
+@media only screen and (min-width: 48em) {
+    .type-small {
+        font-size: 14px;
+        line-height: 20px;
+    }
+}
+
+.small, small {
+    font-size: 11px;
+}
+
+.type-tiny {
+    font-size: 11px;
+    line-height: 16px;
+}
+
+@media only screen and (min-width: 48em) {
+    .type-tiny {
+        font-size: 12px;
+        line-height: 16px;
+    }
+}
+
+.type-micro {
+    font-size: 11px;
+    line-height: 16px;
+}
+
+/* Colors */
+.type-primary {
+    color: var(--primary);
+}
+
+.type-secondary {
+    color: var(--secondary);
+}
+
+.type-dark {
+    color: black;
+    opacity: .8;
+}
+
+.type-danger {
+    color: var(--danger);
+}
+
+.type-negative {
+    color: white;
+}
+
+/* Headings */
+.h1, .h2, .h3, .h4, .h5, .h6, 
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 600;
+}
+
+h1, .h1 {
+    font-size: 25px;
+    line-height: 36px;
+}
+
+@media only screen and (min-width: 48em) {
+    h1, .h1 {
+        font-size: 31px;
+        line-height: 40px;
+    }
+}
+
+h2, .h2 {
+    font-size: 20px;
+    line-height: 28px;
+}
+
+@media only screen and (min-width: 48em) {
+    h2, .h2 {
+        font-size: 25px;
+        line-height: 36px;
+    }
+}
+
+h3, .h3 {
+    font-size: 16px;
+    line-height: 24px;
+}
+
+@media only screen and (min-width: 48em) {
+    h3, .h3 {
+        font-size: 20px;
+        line-height: 28px;
+    }
+}
+
+h4, .h4 {
+    font-size: 14px;
+    line-height: 20px;
+}
+
+@media only screen and (min-width: 48em) {
+    h4, .h4 {
+        font-size: 16px;
+        line-height: 24px;
+    }
+}
+
+h5, .h5 {
+    font-size: 12px;
+    line-height: 16px;
+}
+
+@media only screen and (min-width: 48em) {
+    h5, .h5 {
+        font-size: 14px;
+        line-height: 20px;
+    }
+}
+
+h6, .h6 {
+    font-size: 11px;
+    line-height: 16px;
+}
+
+@media only screen and (min-width: 48em) {
+    h6, .h6 {
+        font-size: 12px;
+        line-height: 16px;
+    }
+}

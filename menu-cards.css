@@ -1,0 +1,70 @@
+/* Menu cards */
+.jum-menu-cards {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.jum-menu-card {
+    width: calc(50% - 30px);
+    border: 1px solid #ccc;
+    overflow: hidden;
+    margin: 15px;
+    display: inline-block;
+
+    background: white;
+    border: 2px solid white;
+    border-radius: 6px;
+    box-shadow: 0 0 12px rgba(0,0,0,.1);
+    padding: 28px;
+    text-align: center;
+
+    font-size: 14px;
+    line-height: 20px;
+    color: var(--secondary);
+
+    height: 140px;
+    min-height: 180px;
+    transition: all .2s;
+}
+
+@media (min-width: 960px) {
+    .jum-menu-card {
+        width: calc(33.333% - 30px);
+    }
+}
+
+@media (min-width: 1140px) {
+    .jum-menu-card {
+        width: calc(25% - 30px);
+    }
+}
+
+@media (min-width: 1800px) {
+    .jum-menu-card {
+        width: calc(20% - 30px);
+    }
+}
+
+.jum-menu-card:hover {
+    border: 2px solid var(--primary);
+    text-decoration: none;
+    color: var(--secondary);
+    box-shadow: 0 8px 40px rgba(0,0,0,.1);
+    transform: translateY(-8px);
+}
+
+.jum-menu-card-content {
+   display: flex;
+   flex-direction: column;
+   height: 100%;
+}
+
+.jum-menu-card-icon {
+    flex: 1 0 auto;
+    padding-bottom: 12px;
+}
+
+.jum-menu-card img {
+    opacity: .9;
+}

@@ -1,0 +1,39 @@
+.suggestions {
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-top-width: 0;
+  list-style: none;
+  margin-top: 0;
+  max-height: 270px;
+  overflow-y: auto;
+  padding-left: 0;
+  width: 100%;
+
+  position: absolute;
+  top: 37px;
+  left: 0;
+  background: white;
+  z-index: 2;
+
+  border-radius: 0 0 4px 4px;
+}
+
+.suggestions li {
+  padding: 12px;
+
+  font-size: 14px;
+  line-height: 20px;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.suggestions li.suggestion-active,
+.suggestion-active,
+.suggestions li:hover {
+  background-color: #007bff;
+  cursor: pointer;
+  font-weight: 400;
+  color: white;
+}
+
+.suggestions li:not(:last-of-type) {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}

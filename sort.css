@@ -1,0 +1,61 @@
+/* Sort */
+.jum-sort {
+    position: relative;
+    padding-left: 4px;
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.jum-sort:after,
+.jum-sort:before {
+    content: "";
+    width: 5px;
+    height: 5px;
+    position: absolute;
+    border-left: 1px solid rgba(0,0,0,.5);
+    border-bottom: 1px solid rgba(0,0,0,.5);
+    transition: all .2s;
+}
+
+.jum-sort:after {
+    top: 0;
+    left: 4px;
+    transform: rotate(135deg);
+}
+
+.jum-sort:before {
+    bottom: 1px;
+    left: 4px;
+    transform: rotate(-45deg);
+}
+
+.jum-sort:hover:after,
+.jum-sort:hover:before {
+    border-left: 1px solid rgba(0,0,0,.8);
+    border-bottom: 1px solid rgba(0,0,0,.8);
+}
+
+/* Ascending */
+.asc.jum-sort:after {
+    border-left-color: black;
+    border-bottom-color: black;
+    top: 3px;
+}
+.asc.jum-sort:before {
+    border-left-color: transparent;
+    border-bottom-color: transparent;
+}
+
+/* Descending */
+.desc.jum-sort:before {
+    border-left-color: black;
+    border-bottom-color: black;
+    bottom: 5px;
+}
+.desc.jum-sort:after {
+    border-left-color: transparent;
+    border-bottom-color: transparent;
+}

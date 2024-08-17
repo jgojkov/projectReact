@@ -1,0 +1,68 @@
+/* Toasts */
+
+.Toastify__toast-container {
+    width: 420px;
+}
+
+.Toastify__toast {
+    padding: 14px 20px 14px 20px;
+    border-radius: 4px;
+}
+
+.Toastify__progress-bar--default {
+    background: #c7c7c7;
+}
+
+.Toastify__close-button {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1;
+    color: #000;
+    text-shadow: 0 1px 0 #fff;
+}
+
+.Toastify__toast-body {
+    color: #6c757d;
+}
+
+/* Toast content styles */
+
+.tostify-title {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 700;
+    border-bottom: 1px solid rgba(0,0,0,.1);
+    margin-left: -20px;
+    margin-right: -30px;
+    padding: 0 30px 8px 20px;
+    color: #6c757d;
+}
+
+.toastify-body {
+    padding-top: 16px;
+    padding-bottom: 6px;
+}
+
+/* Variants */
+.Toastify__toast--warning,
+.Toastify__toast--error,
+.Toastify__toast--success,
+.Toastify__toast--info {
+    background: white;
+}
+
+.Toastify__toast--warning .tostify-title  {
+    color: #ffc107;
+}
+
+.Toastify__toast--error .tostify-title  {
+    color: #dc3545;
+}
+
+.Toastify__toast--success .tostify-title  {
+    color: #28a745;
+}
+
+.Toastify__toast--info .tostify-title  {
+    color: #007bff;
+}

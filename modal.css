@@ -1,0 +1,27 @@
+/* Global styles */
+
+.modal-content {
+  border-color: rgba(0, 0, 0, 0.1);
+  /* height: 100%; */
+}
+
+@media (min-width: 768px) {
+  .modal-content {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+  }
+}
+
+.modal-header {
+  padding: 24px 36px;
+}
+
+.modal-body {
+  padding: 24px 36px;
+  /* max-height: calc(100% - 80px);
+  overflow-y: scroll; */
+}
+
+.modal-footer {
+  padding: 24px 36px;
+  text-align: center;
+}

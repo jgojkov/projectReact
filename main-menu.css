@@ -1,0 +1,135 @@
+/* Global styles */
+.jum-header {
+  background: #f0f0f0 !important;
+  /* background: linear-gradient(to bottom, #e35156 0%, #dc1c23 40%, #dc1c23 40%); */
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 3px solid #dc3545;
+}
+
+.jum-header .dropdown-header {
+  white-space: normal;
+}
+
+.jum-header-label-large {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .jum-header-label-large {
+    display: inline-block;
+  }
+}
+
+@media (min-width: 768px) {
+  .jum-header-label-small {
+    display: none;
+  }
+}
+
+.jum-header-title {
+  color: #212529;
+  font-size: 14px;
+  line-height: 20px;
+  flex: 1 1 auto;
+  padding: 8px 24px;
+}
+
+.jum-header-info {
+  padding: 8px 0;
+}
+
+.jum-header-user {
+  display: inline-block;
+}
+
+.jum-header-dropdown {
+  display: inline-block;
+}
+
+.jum-header-oib {
+  font-size: 12px;
+  line-height: 20px;
+  color: #212529;
+  opacity: 0.8;
+}
+
+/* Menu dropdown links */
+.jum-header-dropdown .dropdown-menu {
+  max-width: 400px;
+  min-width: 320px;
+}
+
+.jum-header-dropdown .dropdown-menu a {
+  clear: both;
+  color: var(--primary);
+  padding: 8px 20px;
+  transition: all 0.2s;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.jum-header-dropdown .dropdown-menu a:last-child {
+  padding-bottom: 8px;
+  margin-bottom: -4px;
+  border-bottom: 0;
+}
+
+.jum-header-dropdown .dropdown-menu a:focus,
+.jum-header-dropdown .dropdown-menu a:hover {
+  background-color: #f5f5f5;
+  color: var(--primary);
+  text-decoration: none;
+}
+
+.jum-header-dropdown .dropdown-menu a.active,
+.jum-header-dropdown .dropdown-menu a.active:focus,
+.jum-header-dropdown .dropdown-menu a.active:hover {
+  background-color: transparent;
+  color: #333;
+  outline: 0;
+  text-decoration: none;
+}
+
+.jum-header-dropdown .dropdown-menu a.active:before {
+  content: "";
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-color: var(--secondary);
+
+  position: absolute;
+  top: calc(50% - 10px);
+  right: 20px;
+
+  border-radius: 50%;
+}
+
+.jum-header-dropdown .dropdown-menu a.active:after {
+  content: "";
+  display: block;
+  width: 4px;
+  height: 8px;
+
+  border-bottom: 2px solid white;
+  border-right: 2px solid white;
+
+  position: absolute;
+  top: calc(50% - 5px);
+  right: 28px;
+  transform: rotate(45deg);
+}
+
+a#helpLink {
+  font-size: 17px;
+  margin-top: 15px;
+  color: #212529;
+}
+
+a#helpLink:hover
+{
+  background-color: transparent;
+  color: #535456;
+  opacity: 0.8;
+}
+
